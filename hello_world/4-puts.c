@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *using puts for tests
- *
+ * main - main function
+ * puts - writeing phrase
+ * return: returning to value 0
  */
 int main(void)
 {
