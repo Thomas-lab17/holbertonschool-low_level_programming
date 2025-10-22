@@ -3,10 +3,9 @@
 #include <stdio.h>
 
 /**
- *betty style doc for function main goes there
-*main - entry point
+*main - Entry point
 *
-*Return: always 0
+*Return: Always 0 (Success)
 */
 int main(void)
 {
