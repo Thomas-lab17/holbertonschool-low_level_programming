@@ -2,7 +2,7 @@
 
 /**
  * main - Prints all single digit numbers of base 10 starting from 0,
- * followed by a new line
+ * separated by ", ", followed by a new line.
  *
  * Return: Always 0 (Success)
  */
@@ -13,7 +13,14 @@ int main(void)
 	for (n = 0; n < 10; n++)
 	{
 		putchar(n + '0');
+		if (n != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
+
 	return (0);
 }
+
