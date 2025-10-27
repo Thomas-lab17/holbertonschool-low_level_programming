@@ -3,16 +3,16 @@
 /**
  * main - Prints the alphabet in lowercase, followed by a new line
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (/////Success)
  */
-int main(void)
-{
-	char letter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-	_putchar(letter);
-	}
-	_putchar('\n');
-	return (0);
-}
+void print_alphabet(void)
+{
+	char print_alphabet = ('a');
+		while (print_alphabet <= 'z')
+		{
+		_putchar (print_alphabet);
+		print_alphabet++;
+		}
+		_putchar('\n');
+		}
