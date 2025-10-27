@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,6 +8,14 @@
  *
  */
 
-int _isupper(int c);
+int _isupper(int c)
 {
-	char 
+	if (c <= 'A' && c <= 'a')
+	{
+		return(1);
+	}
+	else
+	{
+		return(0);
+	}
+}
