@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * main - entry point
- * 
- * Description: this program prints the word: _putchar (it was done by Thomas Charier from holberton laval)
- * 
+ *
+ * Description: this program prints the word: _putchar 
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
