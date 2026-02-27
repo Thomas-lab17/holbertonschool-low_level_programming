@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Description: this program prints the word: _putchar 
+ * Description: this program prints the word: _putchar
  *
  * Return: Always 0 (Success)
  */
