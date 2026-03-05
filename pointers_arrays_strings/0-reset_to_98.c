@@ -3,8 +3,9 @@
 /**
  * reset_to_98 - Updates the value an int points to.
  * @n: Pointer to the int to update.
+ * Return: void
  */
 void reset_to_98(int *n)
 {
-    *n = 98;
+	*n = 98;
 }
