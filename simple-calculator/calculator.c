@@ -40,6 +40,16 @@ int main(void)
 			sum = A + B;
 			printf("result: %d\n", sum);
 		}
+		if(choice == 2)
+		{
+			printf("A:\n");
+			scanf("%d", &A);
+			printf("B:\n");
+			scanf("%d", &B);
+			printf("A: %d\nB: %d\n", A, B);
+			sum = A - B;
+			printf("result: %d\n", sum);
+		}
 		if(choice == 0)
 		{
 			printf("bye");
