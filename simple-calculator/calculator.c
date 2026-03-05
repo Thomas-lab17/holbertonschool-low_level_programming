@@ -5,7 +5,28 @@
 
 int main(void)
 {
+	int choice = 0;
 	
-	
+
+	printf("Simple Calculator\n");
+
+	printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\n"); 
+	/**it works the same way, i have just made it in a single line, 
+	 *less readable but more condensed if you want a low number of lines
+	printf("2) Subtract\n");
+	printf("3) Multiply\n");
+	printf("4) Divide\n");
+	printf("0) Quit\n");
+	*/
+	scanf("%d", &choice);
+
+	printf("choice: %d\n", choice);
+
+	if(choice == 0)
+	{
+		printf("bye");
+	}
+
+	printf("bye");
 	return(0);
 }
