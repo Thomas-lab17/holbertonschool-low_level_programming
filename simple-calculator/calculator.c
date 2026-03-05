@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include "calculator.h"
 
 /**
  * main - Simple calculator program
@@ -13,7 +14,6 @@ int main(void)
     int choice = 0;
     float A = 0;
     float B = 0;
-    float sum = 0;
 
     printf("Simple Calculator\n");
     while (1)
@@ -38,52 +38,23 @@ int main(void)
         }
         if (choice == 1)
         {
-            printf("A:\n");
-            scanf("%f", &A);
-            printf("B:\n");
-            scanf("%f", &B);
-            printf("A: %.2f\nB: %.2f\n", A, B);
-            sum = A + B;
-            printf("result: %.2f\n", sum);
+            addition(A, B);
         }
         if (choice == 2)
         {
-            printf("A:\n");
-            scanf("%f", &A);
-            printf("B:\n");
-            scanf("%f", &B);
-            printf("A: %.2f\nB: %.2f\n", A, B);
-            sum = A - B;
-            printf("result: %.2f\n", sum);
+            soustraction(A, B);
         }
         if (choice == 3)
         {
-            printf("A:\n");
-            scanf("%f", &A);
-            printf("B:\n");
-            scanf("%f", &B);
-            printf("A: %.2f\nB: %.2f\n", A, B);
-            sum = A * B;
-            printf("result: %.2f\n", sum);
+            multiplication(A, B);
         }
         if (choice == 4)
         {
-            printf("A:\n");
-            scanf("%f", &A);
-            printf("B:\n");
-            scanf("%f", &B);
-            printf("A: %.2f\nB: %.2f\n", A, B);
-            sum = A / B;
-            if (B == 0)
-            {
-                printf("Error: division by zero\n");
-            }
-            else
-                printf("result: %.2f\n", sum);
+            division(A, B);
         }
         if (choice == 0)
         {
-            printf("bye");
+            printf("Bye!");
             return (0);
         }
     }
