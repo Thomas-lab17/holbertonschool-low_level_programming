@@ -36,9 +36,9 @@ int main(void)
 			scanf("%f", &A);
 			printf("B:\n");
 			scanf("%f", &B);
-			printf("A: %f\nB: %f\n", A, B);
+			printf("A: %.2f\nB: %.2f\n", A, B);
 			sum = A + B;
-			printf("result: %f\n", sum);
+			printf("result: %.2f\n", sum);
 		}
 		if(choice == 2)
 		{
@@ -46,9 +46,9 @@ int main(void)
 			scanf("%f", &A);
 			printf("B:\n");
 			scanf("%f", &B);
-			printf("A: %f\nB: %f\n", A, B);
+			printf("A: %.2f\nB: %.2f\n", A, B);
 			sum = A - B;
-			printf("result: %f\n", sum);
+			printf("result: %.2f\n", sum);
 		}
 		if(choice == 3)
 		{
@@ -56,9 +56,9 @@ int main(void)
 			scanf("%f", &A);
 			printf("B:\n");
 			scanf("%f", &B);
-			printf("A: %f\nB: %f\n", A, B);
+			printf("A: %.2f\nB: %.2f\n", A, B);
 			sum = A * B;
-			printf("result: %f\n", sum);
+			printf("result: %.2f\n", sum);
 		}
 		if(choice == 4)
 		{
@@ -66,14 +66,14 @@ int main(void)
 			scanf("%f", &A);
 			printf("B:\n");
 			scanf("%f", &B);
-			printf("A: %f\nB: %f\n", A, B);
+			printf("A: %.2f\nB: %.2f\n", A, B);
 			sum = A / B;
 			if(B == 0)
 			{
 				printf("Error: division by zero\n");
 			}
 			else
-				printf("result: %f\n", sum);
+				printf("result: %.2f\n", sum);
 		}
 		if(choice == 0)
 		{
