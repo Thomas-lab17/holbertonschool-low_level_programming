@@ -1,2 +1,52 @@
 #include <stdio.h>
-void addition(float A, float B) { float sum; printf("A:\n"); scanf("%f", &A); printf("B:\n"); scanf("%f", &B); printf("A: %.2f\nB: %.2f\n", A, B); sum = A + B; printf("result: %.2f\n", sum); } void soustraction(float A, float B) { float sum; printf("A:\n"); scanf("%f", &A); printf("B:\n"); scanf("%f", &B); printf("A: %.2f\nB: %.2f\n", A, B); sum = A - B; printf("result: %.2f\n", sum); } void multiplication(float A, float B) { float sum; printf("A:\n"); scanf("%f", &A); printf("B:\n"); scanf("%f", &B); printf("A: %.2f\nB: %.2f\n", A, B); sum = A * B; printf("result: %.2f\n", sum); } void division(float A, float B) { float sum; printf("A:\n"); scanf("%f", &A); printf("B:\n"); scanf("%f", &B); printf("A: %.2f\nB: %.2f\n", A, B); if (B == 0) { printf("Error: division by zero\n"); } else { sum = A / B; printf("result: %.2f\n", sum); } } int main(void) { int choice = 0; float A = 0; float B = 0; printf("Simple Calculator\n"); while (1) { printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\n"); scanf("%d", &choice); printf("choice: %d\n", choice); if (choice > 4 || choice < 0) { printf("invalid choice\n"); } if (choice == 1) { addition(A, B); } if (choice == 2) { soustraction(A, B); } if (choice == 3) { multiplication(A, B); } if (choice == 4) { division(A, B); } if (choice == 0) { printf("Bye!"); return (0); } } }
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "calculator.h"
+
+/**
+ * main - Simple calculator program
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    int choice = 0;
+    float A = 0;
+    float B = 0;
+
+    printf("Simple Calculator\n");
+    while (1)
+    {
+        printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\n");
+
+        scanf("%d", &choice);
+
+        printf("choice: %d\n", choice);
+        if (choice > 4 || choice < 0)
+        {
+            printf("invalid choice\n");
+        }
+        if (choice == 1)
+        {
+            addition(A, B);
+        }
+        if (choice == 2)
+        {
+            soustraction(A, B);
+        }
+        if (choice == 3)
+        {
+            multiplication(A, B);
+        }
+        if (choice == 4)
+        {
+            division(A, B);
+        }
+        if (choice == 0)
+        {
+            printf("Bye!");
+            return (0);
+        }
+    }
+}
