@@ -6,9 +6,9 @@
 int main(void)
 {
 	int choice = 0;
-	int A = 0;
-	int B = 0;
-	int sum = 0;
+	float A = 0;
+	float B = 0;
+	float sum = 0;
 	
 
 	printf("Simple Calculator\n");
@@ -33,22 +33,47 @@ int main(void)
 		if(choice == 1)
 		{
 			printf("A:\n");
-			scanf("%d", &A);
+			scanf("%f", &A);
 			printf("B:\n");
-			scanf("%d", &B);
-			printf("A: %d\nB: %d\n", A, B);
+			scanf("%f", &B);
+			printf("A: %f\nB: %f\n", A, B);
 			sum = A + B;
-			printf("result: %d\n", sum);
+			printf("result: %f\n", sum);
 		}
 		if(choice == 2)
 		{
 			printf("A:\n");
-			scanf("%d", &A);
+			scanf("%f", &A);
 			printf("B:\n");
-			scanf("%d", &B);
-			printf("A: %d\nB: %d\n", A, B);
+			scanf("%f", &B);
+			printf("A: %f\nB: %f\n", A, B);
 			sum = A - B;
-			printf("result: %d\n", sum);
+			printf("result: %f\n", sum);
+		}
+		if(choice == 3)
+		{
+			printf("A:\n");
+			scanf("%f", &A);
+			printf("B:\n");
+			scanf("%f", &B);
+			printf("A: %f\nB: %f\n", A, B);
+			sum = A * B;
+			printf("result: %f\n", sum);
+		}
+		if(choice == 4)
+		{
+			printf("A:\n");
+			scanf("%f", &A);
+			printf("B:\n");
+			scanf("%f", &B);
+			printf("A: %f\nB: %f\n", A, B);
+			sum = A / B;
+			if(B == 0)
+			{
+				printf("Error: division by zero\n");
+			}
+			else
+				printf("result: %f\n", sum);
 		}
 		if(choice == 0)
 		{
@@ -57,5 +82,4 @@ int main(void)
 		}
 	
 	}
-	
 }
