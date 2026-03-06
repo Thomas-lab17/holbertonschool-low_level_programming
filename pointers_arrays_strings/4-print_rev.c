@@ -1,8 +1,8 @@
 #include "main.h"
+
 /**
- * print_rev - Print a string in reverse
- * Description : @s: is the string to reverse and i an integer.
- * return : void
+ * print_rev - Prints a string in reverse
+ * @s: The string to print in reverse
  */
 void print_rev(char *s)
 {
