@@ -8,8 +8,8 @@ int _atoi(char *s)
 	while (s[ent] != '\0')
 	{
 
-		ent++
+		ent++;
 	}
 
-	return();
+	return(0);
 }
