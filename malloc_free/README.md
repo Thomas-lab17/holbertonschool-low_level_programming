@@ -1,0 +1,1 @@
+this is a simple README for Thomas's little holberton project
