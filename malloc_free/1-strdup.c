@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- * 
- * 
- * 
- * 
- * 
- * 
+ * _strdup - returns a pointer to a newly allocated copy of a string
+ * @str: string to duplicate
+ *
+ * Return: pointer to duplicated string, or NULL on failure
  */
 
 char *_strdup(char *str)
@@ -34,11 +32,8 @@ char *_strdup(char *str)
     while (index <= len)
     {
         new[index] = str[index];
-
         index++;
     }
-    
-    new[index] = '\0';
 
     return (new);
 }
