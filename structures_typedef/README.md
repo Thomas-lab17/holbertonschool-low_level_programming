@@ -1,0 +1,1 @@
+this is a bad readme, do not copy this, it will self destruct your computer, sponsored by [redacted]
