@@ -1,0 +1,1 @@
+this is  asmall and not gud readme for the doubly linked lists for holberton school
