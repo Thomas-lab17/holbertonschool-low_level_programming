@@ -1,0 +1,1 @@
+this is a small and incomplete readme for the hash table project
